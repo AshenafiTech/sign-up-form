@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex; 
+    justify-content: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-container {
+    background-color: #000;
+    width: 40%;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    position: relative;
+    top: 150px;
+}
+
+.left-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.left-container img, .left-container h1 {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    width: 14%;
+    height: auto;
+}
+
+.left-container h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description {
+    padding: 10% 45% 2% 7%;
+    font-weight: bold;
+}
+
+
+.short-description {
+    font-weight: bold;
+    margin: 0 7%;
+}
+
+.call-to-action {
+    padding: 5% 45% 0% 0%;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.form-container {
+    padding: 0% 45% 2% 7%;
+    margin-top: 5%;
+    box-shadow: 0 1px 2px #847b7b;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+.form-container form .input-field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form .left-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form input {
+    border-color: #E5E7EB;
+    margin: 0.2rem 0;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+.form-container form input:focus {
+    border-color: blue;
+}
+
+.form-container p {
+    font-size: 1.3rem;
+}
+
+.right-container {
+    width: 60%;
+}
+
+.footer {
+    padding: 5% 45% 2% 7%;
+}
+
+.footer button {
+    background: #596D48;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+
+
+#password:invalid {
+    border: 2px solid red;
+}
+
